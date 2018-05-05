@@ -1,0 +1,237 @@
+
+/* Estilo para la barra de men�s. */
+
+body {
+	background-color: #DAD9D9;
+}
+
+.cuerpo {
+    position: absolute;
+    padding-left: 270px;
+    width:100%;
+    top: 45px;
+}
+
+.menu-activo {
+    background-color: #A0E5CD;
+}
+
+.sidebar {
+	margin: 0px;
+	padding: 0px;
+        padding-top:50px;
+	position: fixed;
+	top: 0px;
+	left: 5px;
+        width: 250px;
+	height: 100%;
+	background-color: #F7FCFD;
+        box-shadow: 2px 0px 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+        z-index: 98;
+}
+
+/* Elementos normales del men�*/
+
+.sidebar li {
+	padding: 5px 0px 5px 0px;
+	border-bottom: 1px #E6E6E6 double;
+        cursor: pointer;
+}
+
+.sidebar i {
+    margin-right: 13px;
+}
+
+.sidebar a {
+    color: #585858;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold; 
+    line-height: 28px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+/* Submen� desplegable. */
+
+.submenu ul {
+	margin: 0px;
+	padding-left: 0px;
+	overflow-x:hidden;
+	position: absolute;
+	width: 100%;
+	background-color: #BDBDBD;
+}
+
+
+
+/* Submen� cerrado. */
+.sub-cerrado ul {
+	height: 0px;
+	visibility: hidden;
+}
+
+/* Animaci�n para abrir el Submen�. */
+
+.sub-abrir {
+	background-color: #D4FCEE;
+}
+
+.sub-abrir li {
+	color: white;
+	margin-bottom: 1px #A4A4A4 double;
+}
+
+.first {
+	border-top: 1px #E6E6E6 double;
+}
+
+.sub-abrir ul {
+	height: auto;
+	padding-left: 0px;
+	visibility: visible;
+	transition-property: height, visibility;
+	transition-duration: 0.5s, 0.5s;
+	transition-timing-function: linear, linear;
+}
+
+.sub-abrir li {
+	padding-left: 40px;
+}
+
+/* Animaci�n para cerrar el Submen�. */
+.sub-cerrar ul {
+	height: 0px;
+	visibility: hidden;
+	transition-property: height;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+/* Estilo para la secci�n del usuario (No se usar� por ahora)*/
+
+.sidebar-user {
+	
+}
+
+
+/* Vamos con la barra de navegación superior (Navbar)*/
+
+.navegacion {
+    position: fixed;
+    width: 100%;
+    background-color: #319967;
+    border-radius: 0;
+    border: 0px #27447B solid;
+    z-index: 99;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 30px; /* aqui escoges el alto que necesites */
+}
+.navbar {
+    min-height:30px !important; /* aqui escoges el alto que necesites */
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+    color : white;
+}
+
+.breadcrumb > h4 {
+    color : #1D5238;
+}
+
+/* Caja básica */
+
+.caja {
+    position: relative;
+    background-color: #F7FCFD;
+    border-radius: 0;
+    border-left: 2px #1D5238 solid;
+    box-shadow: 0px 2px 10px;
+    width: 100%;
+    padding: 8px 15px;
+}
+
+/* Cabecera de caja */
+
+.caja-header {
+    color: white;
+    background-color: #319967;
+    margin-left: -15px;
+    padding-left: 15px;
+    margin-top: -8px;
+    padding-top: 8px;
+    margin-right: -15px;
+    padding-bottom:3px;
+    margin-bottom: 15px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+/* labels */
+
+.la {
+    padding: 2px;
+    margin: auto;
+    color: white;
+}
+
+.exito {
+    color: #1DEA5E;
+}
+
+.danger {
+    color: #E52012;
+}
+
+/* Icono principal en breadcrumbs */
+
+.principal-icon {
+    position:absolute;
+    margin: 0px;
+    right: 0px;
+    top: 0px;
+    width:100px;
+    height:100%;
+    background-color: #43CE8B;
+    padding-left:21px;
+    padding-top: 12px;
+    
+}
+
+.principal-icono  {
+    color: #F7FCFD;
+}
+
+.barra-botones {
+    border-radius: 0;
+    margin-top:0px;
+    width:100%;
+    padding: 0.1px;
+    background-color:#B0E3FC;
+}
+
+.barra-botones > button {
+    border: 0;
+}
+
+.barra-botones-estandar {
+    width: 100px;
+}
+
+.raichu {
+    background-color: #FCDB84;
+    color: #DAAC33;
+    border-color: #F4CF6D;
+}
+
+.boton {
+    border-radius: 0;
+}
